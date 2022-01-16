@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-      - run: docker build -t mrnogues/react-test -f Dockerfile.dev ./frontend
+      - run: docker build -t mrnogues/react-test -f frontend/Dockerfile.dev frontend
       - run: docker run -e CI=true mrnogues/react-test npm test
 
       - name: Generate deployment package

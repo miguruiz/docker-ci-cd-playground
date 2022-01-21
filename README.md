@@ -9,3 +9,6 @@ Simple multi-project repo that contains the following projects using docker:
 | visitsWebsite | Small website that counts the number of visits. It uses two containers, one with the node JS app and another with redis.                                                                                                                                                      |
 | simpleWeb     | A simple website that returns Hi there                                                                                                                                                                                                                                        |
 | redis-image   | Just a dockerized redis                                                                                                                                                                                                                                                       |
+
+
+note: the AWS Elastic Beanstalk is no longer running, hence new commits will always fail to deploy.
